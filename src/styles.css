@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.submitBtn {
+    border-radius: 0;
+}
+
+.contactList {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px;
+    padding: 10px;
+    width: 50%;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(20px);
+}
+
+.contactList.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactDetails {
+    float: left;
+}
+
+.phoneIcon {
+    margin-right: 8px;
+    margin-bottom: -2px;
+}
+
+.formatButtons,
+.deleteIcon,
+.updateIcon {
+    float: right;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.updateIcon:hover {
+    cursor: pointer;
+    color: green;
+}
+
+.deleteIcon:hover {
+    cursor: pointer;
+    color: red;
+}
